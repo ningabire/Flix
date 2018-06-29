@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		328151E920E6DACC007548F6 /* SearchBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328151E820E6DACC007548F6 /* SearchBarTableViewController.m */; };
 		32843BCC20E4968300057BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32843BCB20E4968300057BA0 /* AppDelegate.m */; };
 		32843BD220E4968300057BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32843BD020E4968300057BA0 /* Main.storyboard */; };
 		32843BD420E4968400057BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32843BD320E4968400057BA0 /* Assets.xcassets */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		06205B9E207A1430884CE848 /* Pods-FlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixUITests/Pods-FlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3116D82D37EFEC1E145B6894 /* Pods-FlixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlixTests/Pods-FlixTests.release.xcconfig"; sourceTree = "<group>"; };
+		328151E720E6DACC007548F6 /* SearchBarTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBarTableViewController.h; sourceTree = "<group>"; };
+		328151E820E6DACC007548F6 /* SearchBarTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBarTableViewController.m; sourceTree = "<group>"; };
 		32843BC720E4968300057BA0 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32843BCA20E4968300057BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32843BCB20E4968300057BA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				3286404220E5A068006FA4E4 /* DetailsViewController.m */,
 				3286404420E5B9B2006FA4E4 /* MoviesGridViewController.h */,
 				3286404520E5B9B2006FA4E4 /* MoviesGridViewController.m */,
+				328151E720E6DACC007548F6 /* SearchBarTableViewController.h */,
+				328151E820E6DACC007548F6 /* SearchBarTableViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				32843BDA20E4968400057BA0 /* main.m in Sources */,
 				3286404320E5A068006FA4E4 /* DetailsViewController.m in Sources */,
 				32843BCC20E4968300057BA0 /* AppDelegate.m in Sources */,
+				328151E920E6DACC007548F6 /* SearchBarTableViewController.m in Sources */,
 				3286404920E61E51006FA4E4 /* MovieCollectionCell.m in Sources */,
 				3286404020E565D2006FA4E4 /* MovieCell.m in Sources */,
 				32843BFE20E4B19A00057BA0 /* MoviesViewController.m in Sources */,

@@ -11,12 +11,14 @@
 #import "DetailsViewController.h"
 #import "UIImageView+AFNetworking.h"
 
-@interface MoviesViewController () <UITableViewDataSource,UITableViewDelegate>
+@interface MoviesViewController () <UITableViewDataSource,UITableViewDelegate, UISearchBarDelegate>
 
 @property (nonatomic, strong) NSArray *movies;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *filteredData;
 
 @end
 
@@ -27,6 +29,7 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.searchBar.delegate = self;
     
     [self fetchMovies];
     
@@ -58,13 +61,11 @@
                 NSLog(@"%@", movie[@"title"]);
             }
             
+            self.filteredData = self.movies;
+            
             [self.tableView reloadData];
-            
-            // TODO: Get the array of movies
-            // TODO: Store the movies in a property to use elsewhere
-            // TODO: Reload your table view data
-            
-            [self.refreshControl endRefreshing];
+        
+         [self.refreshControl endRefreshing];
            [self.activityIndicator stopAnimating];
         }
     }];
@@ -99,6 +100,24 @@
     [cell.posterView setImageWithURL:posterURL];
 
     return cell;
+}
+
+- (void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    
+    if (searchText.length != 0) {
+        NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(NSString *evaluatedObject, NSDictionary *bindings) {
+            return [evaluatedObject containsString:searchText];
+        }];
+        self.filteredData = [self.movies filteredArrayUsingPredicate:predicate];
+        
+        NSLog(@"%@", self.filteredData);
+    }
+    
+    else {
+        self.filteredData = self.movies;
+    }
+    
+    [self.tableView reloadData];
 }
 
 #pragma mark - Navigation
