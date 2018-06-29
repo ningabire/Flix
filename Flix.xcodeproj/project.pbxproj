@@ -18,6 +18,7 @@
 		3286404020E565D2006FA4E4 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3286403F20E565D2006FA4E4 /* MovieCell.m */; };
 		3286404320E5A068006FA4E4 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3286404220E5A068006FA4E4 /* DetailsViewController.m */; };
 		3286404620E5B9B2006FA4E4 /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3286404520E5B9B2006FA4E4 /* MoviesGridViewController.m */; };
+		3286404920E61E51006FA4E4 /* MovieCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3286404820E61E51006FA4E4 /* MovieCollectionCell.m */; };
 		B3C462938CF58194B995EB00 /* libPods-FlixTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 795FA99442EEC6FCF2A00FA1 /* libPods-FlixTests.a */; };
 		D2C3F0F85BB00CA92B45AE7E /* libPods-Flix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6876D17C3C9334943297A57 /* libPods-Flix.a */; };
 		D4DADAC4DDFABCF27E9FFB13 /* libPods-FlixUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F35005A555E1CB4C3E1B08 /* libPods-FlixUITests.a */; };
@@ -65,6 +66,8 @@
 		3286404220E5A068006FA4E4 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		3286404420E5B9B2006FA4E4 /* MoviesGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesGridViewController.h; sourceTree = "<group>"; };
 		3286404520E5B9B2006FA4E4 /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
+		3286404720E61E51006FA4E4 /* MovieCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionCell.h; sourceTree = "<group>"; };
+		3286404820E61E51006FA4E4 /* MovieCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionCell.m; sourceTree = "<group>"; };
 		6231409525429473843620AF /* Pods-FlixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlixTests/Pods-FlixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		795FA99442EEC6FCF2A00FA1 /* libPods-FlixTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlixTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F35005A555E1CB4C3E1B08 /* libPods-FlixUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlixUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +193,8 @@
 			children = (
 				3286403E20E565D2006FA4E4 /* MovieCell.h */,
 				3286403F20E565D2006FA4E4 /* MovieCell.m */,
+				3286404720E61E51006FA4E4 /* MovieCollectionCell.h */,
+				3286404820E61E51006FA4E4 /* MovieCollectionCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				32843BDA20E4968400057BA0 /* main.m in Sources */,
 				3286404320E5A068006FA4E4 /* DetailsViewController.m in Sources */,
 				32843BCC20E4968300057BA0 /* AppDelegate.m in Sources */,
+				3286404920E61E51006FA4E4 /* MovieCollectionCell.m in Sources */,
 				3286404020E565D2006FA4E4 /* MovieCell.m in Sources */,
 				32843BFE20E4B19A00057BA0 /* MoviesViewController.m in Sources */,
 				3286404620E5B9B2006FA4E4 /* MoviesGridViewController.m in Sources */,
